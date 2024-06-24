@@ -1,0 +1,48 @@
+@import '../../assets/variables';
+
+.profile__page {
+    width: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    border: 3px solid $border-main;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px 0px $profile-box-shadow;
+
+    &__linebreak{
+      border: 1px solid $border-main;
+    }
+
+    &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    &__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    &__name{
+    align-self: center;
+    font:$font-big;
+    margin-bottom: 20px;
+    }
+    &__avatar{
+    width: 50px;
+  }
+}
+}
+
+

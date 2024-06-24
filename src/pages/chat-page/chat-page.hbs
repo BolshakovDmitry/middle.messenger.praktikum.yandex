@@ -1,0 +1,89 @@
+<div class="chat-page-container">
+
+  <aside class="chat-page-container__left">
+
+    {{> Button className="grey-no-border" text="Профиль" page="profile" }}
+
+    <form action="#" class="search"> 
+        <input type="text" class="search__input" placeholder="Поиск">
+          <button class="search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>  
+    </form>
+
+    {{#> ChatList }}
+
+      {{#each (chat-page-list)}}
+        {{> ChatItem message = "message"}}
+        {{> Linebreak }}
+      {{/each}}
+
+    {{> Link page="LoginPage" text="Назад к логину"}}
+
+    {{/ ChatList }}
+
+  </aside>
+  
+  <main class="chat-page-container__right">
+    
+    {{#> ChatHeaderContainer }}
+    
+      {{#each (chat-page-list)}}
+
+        {{#if current}}
+          {{> ChatHeader }}
+        {{/if}}
+
+      {{/each}}
+
+      {{#each (chat-page-list)}}
+    
+        {{#if current}}
+          <button class="dots-buttons">
+            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+         </button>
+        {{/if}}  
+
+      {{/each}}
+       
+    {{/ ChatHeaderContainer }}
+
+    {{#> ChatMainList }}
+    
+      {{#each (chat-page-list)}}
+
+        {{#if current}}
+          {{> ChatMainItem }}
+        {{/if}}
+
+       {{/each}}
+       
+    {{/ ChatMainList }}
+  
+    <footer class="chat-page-container__bottom">
+
+    {{> Linebreak }}
+
+      <div class="chat-page-container__bottom__bottom-flex">
+
+        <button class="clip">
+            <i class="fa-solid fa-paperclip fa-2xl" style="color: #0033ff;"></i>
+        </button>
+        
+        <form class="search-bottom">
+          <input type="text" class="search-bottom__input" placeholder="Введите сообщение">
+          <button class="search-bottom__button" >
+            <i class="fa-solid fa-angles-right fa-xl" style="color: #0033ff;"></i>
+          </button>
+        </form> 
+
+      </div>
+
+  </footer>
+    
+</main>
+
+
+
+
+

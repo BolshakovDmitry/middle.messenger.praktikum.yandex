@@ -1,0 +1,34 @@
+@import '../../assets/variables';
+
+.button {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background-color: $button-bgcolor;
+  color: $button-color;
+  border: 0;
+  cursor: pointer;
+}
+.small{
+  width: 40%;
+}
+.red{
+  background-color: $red-PRIMARY;
+}
+.grey-no-border{
+  font:$font-regular;
+  border:none;
+  width:30%;
+  background-color: inherit;
+  color: $black-PRIMARY;
+  margin-left:auto;
+  margin-top: 20px;
+}
+.button:hover{
+  background-color: $button-hover;
+  }
+.grey-no-border:hover{
+    background-color:inherit;
+  }
+
