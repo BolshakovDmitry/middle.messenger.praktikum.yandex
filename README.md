@@ -15,5 +15,5 @@ password-page - страница редактирования пароля
 profile-page - страница редактирования профиля 
 refistration-page - страница регистрации
 
-
+Нетлифай - https://sprint-1--chat-yandex-pract.netlify.app/
 
