@@ -1,0 +1,38 @@
+@import '../../assets/variables';
+
+.input {
+    height: 26px;
+  
+    &__element {
+      width: 120px;
+      border: none;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      font: $font-regular;
+    }
+  }
+  .no-bottom-line{
+    align-self: flex-end;
+
+    input::-webkit-input-placeholder {
+      text-align: right;
+    }
+    
+    input:-moz-placeholder {
+      text-align: right;
+    }
+    
+    input::-moz-placeholder {
+      text-align: right;
+    }
+    
+    input:-ms-input-placeholder {
+      text-align: right;
+    }
+  }
+  .standart{
+    font:$font-small;
+  } 
+
+  

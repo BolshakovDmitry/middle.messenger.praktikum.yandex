@@ -1,0 +1,17 @@
+@import '../../assets/variables';
+
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__input {
+    font: $font-small;
+    color: $text-color-grey;;
+  }
+
+  }
+
+  
+
+
